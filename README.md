@@ -6,9 +6,14 @@ Projeto proposto no programa ONE - G8, consiste em realizar a logica para que po
 # :hammer: Funcionalidades do projeto
 
 - `Lista de nomes`: Acrescente uma lista de nomes.
+  ![image](https://github.com/user-attachments/assets/e2b7c3ab-1673-4b9c-8bc0-63b8e5780691)
+
 - `Sortear nome da lista`: Realiza o sorteio de um nome de forma aleatória.
+  ![image](https://github.com/user-attachments/assets/7616b555-3c24-49f7-87f1-3cf601bd5381)
 
 
 # 📁 Acesso ao projeto
 
-**Faça o donwload da pasta desafio-amigo-secreto_pt-main e abra o arquivo index.html em seu navegador**
+**Faça o donwload da pasta "desafio-amigo-secreto_pt-main" e abra o arquivo index.html em seu navegador**
+
+
