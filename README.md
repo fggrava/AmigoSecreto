@@ -19,7 +19,8 @@ Projeto proposto no programa ONE - G8, consiste em realizar a logica para que po
 # :hammer: Ferramentas Utilizadas
 ![image](https://github.com/user-attachments/assets/e9d2b1fd-13ae-485f-9fb9-724a87e17948)
 
- <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/threedsmax/threedsmax-original.svg" width="50" height="50"/>                     
+ <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/threedsmax/threedsmax-original.svg" width="70" height="70"/> 
+ <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/threedsmax/threedsmax-original.svg" width="70" height="70"/>
 # Autor
 
 | [<img loading="lazy" src="" width="115"><br><sub>Fernando Grava</sub>](https://github.com/fggrava) 
