@@ -1,98 +1,65 @@
-//O principal objetivo deste desafio é fortalecer suas habilidades em lógica de programação. Aqui você deverá desenvolver a lógica para resolver o problema.
-let listaDeNomes = [];
-//let numeroDeNomes = listaDeNomes.length;
+let listaDeNomes = []; //Variavel para a matriz de nomes digitados.
 
-
+//Função principal do botão adicionar amigos.
 function adicionarAmigo() {
 
-  let nomeDigitado = document.querySelector('input').value;
-    if (nomeDigitado == '') {
-       console.log('Digite um nome válido');
+  let amigo = document.querySelector('input').value;
+    if (amigo == '') { //verifica se oo campo de digitação não está sem preenchimento.
+       alert('Digite um nome válido');
     } else {
-      if (listaDeNomes.includes(nomeDigitado)) {
-       console.log ('esse nome já existe');
-    // return gerarNumeroAleatorio();
+      if (listaDeNomes.includes(amigo)) { //Verifica se o nome digitado já existe na lista de nomes.
+       alert('esse nome já existe');
       } else {  
-        listaDeNomes.push(nomeDigitado);
+        listaDeNomes.push(amigo); //Acrescenta o nome digitado na matriz de nomes.
+        exibirLista();
         console.log (listaDeNomes);
         limparCampo();
-     //console.log(listaDeNumerosSorteados)
-     //return numeroEscolhido;
       }
     }
+}
+
+// Segunda função principal, que limpa a lista de nomes digitados e realiza o sorteio de um nome da lista, apresentando o nome em uma mensagem.
+function sortearAmigo() {
+  if (listaDeNomes < 1) { // verifica se realmente existem nomes digitados na lista de nomes.
+    alert('Nenhum amigo foi inserido');
+    limparSorteio();
+    return;
+  } 
+  let nomeSorteado = listaDeNomes[Math.floor(Math.random() * listaDeNomes.length)];
+  let resultado = document.getElementById('resultado');
+  resultado.innerHTML = `O amigo sorteado foi: ${nomeSorteado}`; //exibe uma mensagem com o nome sorteado na tela.
+
+  limparLista();
+  listaDeNomes = [];
 
 }
 
+//Função para exibir a lista dos nomes que estão sendo digitados.
+function exibirLista() {
+  
+  limparLista();
+
+  for (let i = 0; i < listaDeNomes.length;i++){
+    let item = document.createElement('li');
+    item.textContent = listaDeNomes[i];
+    listaAmigos.appendChild(item);
+  }
+  }
+
+//Função para limpar o campo para digitar o proximo nome.  
 function limparCampo() {
    nomeDigitado = document.querySelector('input');
    nomeDigitado.value = '';
 }
 
+//Função para limpar o aviso com o nome sorteado.
+function limparSorteio(){
+  let resultado = document.getElementById('resultado');
+  resultado.innerHTML = '';
+}
 
-
-
-
-//let numeroSecreto = gerarNumeroAleatorio();
-//let tentativas = 1;
-
-//function exibirTextoNaTela(tag, texto) {
-  //  let campo = document.querySelector(tag);
-    //campo.innerHTML = texto;
-    //responsiveVoice.speak(texto, 'Brazilian Portuguese Female', {rate:1.2});
-//}
-
-//function exibirMensagemInicial() {
-  //  exibirTextoNaTela('h1', 'Jogo do número secreto');
-    //exibirTextoNaTela('p', 'Escolha um número entre 1 e 10');
-//}
-
-//exibirMensagemInicial();
-
-//function verificarChute() {
-  //  let chute = document.querySelector('input').value;
-    
-    //if (chute == numeroSecreto) {
-      //  exibirTextoNaTela('h1', 'Acertou!');
-        //let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativa';
-        //let mensagemTentativas = `Você descobriu o número secreto com ${tentativas} ${palavraTentativa}!`;
-        //exibirTextoNaTela('p', mensagemTentativas);
-        //document.getElementById('reiniciar').removeAttribute('disabled');
-    //} else {
-      //  if (chute > numeroSecreto) {
-        //    exibirTextoNaTela('p', 'O número secreto é menor');
-        //} else {
-          //  exibirTextoNaTela('p', 'O número secreto é maior');
-        //}
-        //tentativas++;
-        //limparCampo();
-   // }
-//}
-
-//function gerarNumeroAleatorio() {
-  //  let numeroEscolhido = parseInt(Math.random() * numeroLimite + 1);
-    //let quantidadeDeElementosNaLista = listaDeNumerosSorteados.length;
-
-    //if (quantidadeDeElementosNaLista == numeroLimite) {
-      //  listaDeNumerosSorteados = [];
-   // }
-    //if (listaDeNumerosSorteados.includes(numeroEscolhido)) {
-       // return gerarNumeroAleatorio();
-    //} else {
-      //  listaDeNumerosSorteados.push(numeroEscolhido);
-        //console.log(listaDeNumerosSorteados)
-        //return numeroEscolhido;
-   // }
-//}
-
-//function limparCampo() {
-  //  chute = document.querySelector('input');
-    //chute.value = '';
-//}
-
-//function reiniciarJogo() {
-  //  numeroSecreto = gerarNumeroAleatorio();
-    //limparCampo();
-    //tentativas = 1;
-    //exibirMensagemInicial();
-    //document.getElementById('reiniciar').setAttribute('disabled', true)
-//}
+// Função para limpar a lista de nomes digitados.
+function limparLista(){
+  let listaAmigos = document.getElementById('listaAmigos');
+  listaAmigos.innerHTML = " ";
+}
