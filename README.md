@@ -5,7 +5,10 @@ Projeto proposto no programa ONE - G8, consiste em realizar a logica para que po
 
 # :hammer: Funcionalidades do projeto
 
-- `Listas`: Utilização e manipulação de listas.
-- `Funções`: Amplo uso de funções, elementos essenciais para criar um código eficiente.
-- `Gerador de número Aleatório`: Aplicação do Math.Random para sortear o nome de forma aleatória.
-- `Boas práticas`: Utilização de boas práticas aprendidas para manter um código organizado e de fácil entendimento.
+- `Lista de nomes`: Acrescente uma lista de nomes.
+- `Sortear nome da lista`: Realiza o sorteio de um nome de forma aleatória.
+
+
+# 📁 Acesso ao projeto
+
+**Faça o donwload da pasta desafio-amigo-secreto_pt-main e abra o arquivo index.html em seu navegador**
