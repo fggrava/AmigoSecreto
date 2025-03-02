@@ -16,4 +16,8 @@ Projeto proposto no programa ONE - G8, consiste em realizar a logica para que po
 
 **Faça o donwload da pasta "desafio-amigo-secreto_pt-main" e abra o arquivo index.html em seu navegador**
 
+# :hammer: Ferramentas Utilizadas
+![image](https://github.com/user-attachments/assets/52f2abd0-4e34-4f32-844e-d5e92ed5ca2a) ![image](https://github.com/user-attachments/assets/001df335-b7c4-4376-ad4f-cca4894eca38) ![image](https://github.com/user-attachments/assets/5baa9ce9-1526-4a06-a2e8-de626ad85910)
+
+
 
